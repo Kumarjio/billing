@@ -1,4 +1,5 @@
 <?php 
+/* DB CONNECTION */
 class Connection {
     protected $host = "localhost";
     protected $dbname = "billing";
@@ -35,5 +36,6 @@ class Connection {
 
         $this->DBH = null;
     }
+	
 	
 }
