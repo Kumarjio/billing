@@ -244,7 +244,7 @@
 							<div class="form-group form-group-sm  no-margin-bottom">
 								<a href="#" class="btn btn-danger btn-xs delete-row"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
 								<input type="text" class="form-control form-group-sm item-input invoice_product" name="invoice_product[]" placeholder="Enter item title and / or description">
-								<p class="item-select">or <a href="#">select an item</a></p>
+								<!--<p class="item-select">or <a href="#">select an item</a></p> -->
 							</div>
 						</td>
 						<td class="text-right">
@@ -260,7 +260,7 @@
 						</td>
 						<td class="text-right">
 							<div class="form-group form-group-sm  no-margin-bottom">
-								<input type="text" class="form-control calculate" name="invoice_product_discount[]" placeholder="Enter % or value (ex: 10% or 10.50)">
+								<input type="text" class="form-control calculate" name="invoice_product_discount[]" placeholder="(ex: 10% or 10.50)">
 							</div>
 						</td>
 						<td class="text-right">
