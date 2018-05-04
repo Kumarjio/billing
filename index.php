@@ -101,14 +101,14 @@
 							<h1 class="invoice_type">INVOICE</h1>
 						</div>
 						<div class="col-xs-3">
-							<select name="invoice_type" id="invoice_type" class="form-control">
+							<select name="type" id="invoice_type" class="form-control">
 								<option value="invoice" selected="">Invoice</option>
 								<option value="quote">Quote</option>
 								<option value="receipt">Receipt</option>
 							</select>
 						</div>
 						<div class="col-xs-3">
-							<select name="invoice_status" id="invoice_status" class="form-control">
+							<select name="status" id="invoice_status" class="form-control">
 								<option value="open" selected="">Open</option>
 								<option value="paid">Paid</option>
 							</select>
@@ -117,7 +117,7 @@
 					<div class="col-xs-4 no-padding-right">
 				        <div class="form-group">
 				            <div class="input-group date" id="invoice_date">
-				                <input type="text" class="form-control required" name="invoice_date" placeholder="Select invoice date" data-date-format="DD/MM/YYYY">
+				                <input type="text" class="form-control required" name="date" placeholder="Select invoice date" data-date-format="DD/MM/YYYY">
 				                <span class="input-group-addon">
 				                    <span class="glyphicon glyphicon-calendar"></span>
 				                </span>
@@ -127,7 +127,7 @@
 				    <div class="col-xs-4">
 				        <div class="form-group">
 				            <div class="input-group date" id="invoice_due_date">
-				                <input type="text" class="form-control required" name="invoice_due_date" placeholder="Select due date" data-date-format="DD/MM/YYYY">
+				                <input type="text" class="form-control required" name="duedate" placeholder="Select due date" data-date-format="DD/MM/YYYY">
 				                <span class="input-group-addon">
 				                    <span class="glyphicon glyphicon-calendar"></span>
 				                </span>
@@ -136,7 +136,7 @@
 				    </div>
 					<div class="input-group col-xs-4 float-right">
 						<span class="input-group-addon">#SSJ</span>
-						<input type="text" name="invoice_id" id="invoice_id" class="form-control required" placeholder="Invoice Number" aria-describedby="sizing-addon1" value="1">
+						<input type="text" name="number" id="invoice_id" class="form-control required" placeholder="Invoice Number" aria-describedby="sizing-addon1" value="1">
 					</div>
 				</div>
 			</div>
@@ -275,7 +275,7 @@
 			<div id="invoice_totals" class="padding-right row text-right">
 				<div class="col-xs-6">
 					<div class="input-group form-group-sm textarea no-margin-bottom">
-						<textarea class-"form-control"="" name="invoice_notes" placeholder="Please enter any order notes here."></textarea>
+						<textarea class-"form-control"="" name="notes" placeholder="Please enter any order notes here."></textarea>
 					</div>
 				</div>
 				<div class="col-xs-6 no-padding-right">
@@ -285,7 +285,7 @@
 						</div>
 						<div class="col-xs-3">
 							₹<span class="invoice-sub-total">0.00</span>
-							<input type="hidden" name="invoice_subtotal" id="invoice_subtotal" value="0.00">
+							<input type="hidden" name="subtotal" id="invoice_subtotal" value="0.00">
 						</div>
 					</div>
 					<div class="row">
@@ -294,7 +294,7 @@
 						</div>
 						<div class="col-xs-3">
 							₹<span class="invoice-discount">0.00</span>
-							<input type="hidden" name="invoice_discount" id="invoice_discount" value="0.00">
+							<input type="hidden" name="discount" id="invoice_discount" value="0.00">
 						</div>
 					</div>
 					<div class="row">
@@ -304,7 +304,7 @@
 						<div class="col-xs-3">
 							<div class="input-group input-group-sm">
 								<span class="input-group-addon">₹</span>
-								<input type="text" class="form-control calculate shipping" name="invoice_shipping" aria-describedby="sizing-addon1" placeholder="0.00">
+								<input type="text" class="form-control calculate shipping" name="shipping" aria-describedby="sizing-addon1" placeholder="0.00">
 							</div>
 						</div>
 					</div>
@@ -314,7 +314,7 @@
 						</div>
 						<div class="col-xs-3">
 							₹<span class="invoice-vat" data-enable-vat="1" data-vat-rate="20" data-vat-method="">0.00</span>
-							<input type="hidden" name="invoice_vat" id="invoice_vat" value="0.00">
+							<input type="hidden" name="gst" id="invoice_vat" value="0.00">
 						</div>
 					</div>
 										<div class="row">
@@ -323,7 +323,7 @@
 						</div>
 						<div class="col-xs-3">
 							₹<span class="invoice-total">0.00</span>
-							<input type="hidden" name="invoice_total" id="invoice_total" value="0.00">
+							<input type="hidden" name="total" id="invoice_total" value="0.00">
 						</div>
 					</div>
 				</div>
