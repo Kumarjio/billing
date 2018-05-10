@@ -228,9 +228,15 @@
 							<h4>Qty</h4>
 						</th>
 						<th>
+							<h4>HSN CODE</h4>
+						</th>
+						<th>
+							<h4>UOM </h4>
+						</th>
+						<th>
 							<h4>Price</h4>
 						</th>
-						<th width="300">
+						<th >
 							<h4>Discount</h4>
 						</th>
 						<th>
@@ -247,6 +253,17 @@
 								<!--<p class="item-select">or <a href="#">select an item</a></p> -->
 							</div>
 						</td>
+						<td class="text-right">
+							<div class="form-group form-group-sm no-margin-bottom">
+								<input type="text" class="form-control invoice_product_qty calculate" name="invoice_product_hsn[]" value="">
+							</div>
+						</td>
+							<td class="text-right">
+							<div class="form-group form-group-sm no-margin-bottom">
+								<input type="text" class="form-control invoice_product_qty calculate" name="invoice_product_UOM[]" value="">
+							</div>
+						</td>
+
 						<td class="text-right">
 							<div class="form-group form-group-sm no-margin-bottom">
 								<input type="text" class="form-control invoice_product_qty calculate" name="invoice_product_qty[]" value="1">

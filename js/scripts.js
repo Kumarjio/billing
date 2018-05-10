@@ -493,7 +493,7 @@ $(document).ready(function() {
 				data: $("#create_invoice").serialize(),
 				dataType: 'json',
 				success: function(data){
-					$("#response .message").html("<strong>" + data.status + "</strong>: " + data.message);
+					$("#response .message").html("<strong>" + data.status + "<a href='pdf/pdf.pdf>Print Invlice</a></strong>: " + data.message);
 					$("#response").removeClass("alert-warning").addClass("alert-success").fadeIn();
 					$("html, body").animate({ scrollTop: $('#response').offset().top }, 1000);
 					$("#create_invoice").before().html("<a href='#' class='btn btn-primary'>Create new invoice</a>");
